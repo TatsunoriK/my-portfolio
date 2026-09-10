@@ -4,31 +4,58 @@
   body {
     background-color: #030712;
     color: #e2e8f0;
-    font-family: 'Courier New', Courier, monospace; /* ฟอนต์แนวโค้ดดิ้ง/ล้ำยุค */
+    font-family: 'Courier New', Courier, monospace;
     overflow-x: hidden;
   }
-}
-
-/* เอฟเฟกต์เรืองแสงนีออน */
-.neon-glow-cyan {
-  text-shadow: 0 0 10px rgba(6, 182, 212, 0.7), 0 0 20px rgba(6, 182, 212, 0.5);
-}
-
-.neon-glow-pink {
-  text-shadow: 0 0 10px rgba(236, 72, 153, 0.7), 0 0 20px rgba(236, 72, 153, 0.5);
-}
-
-.neon-border-cyan {
-  box-shadow: 0 0 15px rgba(6, 182, 212, 0.3), inset 0 0 15px rgba(6, 182, 212, 0.1);
-}
-
-.neon-border-pink {
-  box-shadow: 0 0 15px rgba(236, 72, 153, 0.3), inset 0 0 15px rgba(236, 72, 153, 0.1);
 }
 
 /* ลายเส้นตารางไฮเทคพื้นหลัง */
 .cyber-grid {
   background-size: 40px 40px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
+
+/* แอนิเมชันกระแสไฟฟ้าวิ่งบนเส้นตาราง */
+@keyframes electricFlowVertical {
+  0% { transform: translateY(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+@keyframes electricFlowHorizontal {
+  0% { transform: translateX(-100%); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateX(100vw); opacity: 0; }
+}
+
+.animate-electric-v {
+  animation: electricFlowVertical linear infinite;
+}
+
+.animate-electric-h {
+  animation: electricFlowHorizontal linear infinite;
+}
+
+/* เอฟเฟกต์กระพริบแสงนีออนเวลา Hover */
+@keyframes neonPulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(6, 182, 212, 0.3), inset 0 0 15px rgba(6, 182, 212, 0.1); }
+  50% { box-shadow: 0 0 30px rgba(6, 182, 212, 0.8), inset 0 0 25px rgba(6, 182, 212, 0.4), 0 0 50px rgba(6, 182, 212, 0.5); }
+}
+
+@keyframes pinkPulse {
+  0%, 100% { box-shadow: 0 0 15px rgba(236, 72, 153, 0.3), inset 0 0 15px rgba(236, 72, 153, 0.1); }
+  50% { box-shadow: 0 0 30px rgba(236, 72, 153, 0.8), inset 0 0 25px rgba(236, 72, 153, 0.4), 0 0 50px rgba(236, 72, 153, 0.5); }
+}
+
+.hover-neon-cyan:hover {
+  animation: neonPulse 1.5s infinite;
+  border-color: rgba(6, 182, 212, 0.9);
+}
+
+.hover-neon-pink:hover {
+  animation: pinkPulse 1.5s infinite;
+  border-color: rgba(236, 72, 153, 0.9);
 }
