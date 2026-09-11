@@ -51,7 +51,7 @@ function App() {
 
       {/* About Section */}
       <section id="about" className="section-box">
-        <h2 className="title-cyan">01. <span className="text-cyan-400">ABOUT_SYSTEM</span></h2>
+        <h2 className="title-cyan"> <span className="text-cyan-400">ABOUT_SYSTEM</span></h2>
         <div className="card-info hover-neon-cyan">
           <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-4">
             Hello! I am <strong className="text-white">Tatsunori Kato</strong>, a passionate Fullstack Developer currently looking for an internship opportunity to gain hands-on industry experience. I specialize in building robust web applications, ranging from interactive frontend interfaces with React & Tailwind to scalable backend systems using Node.js, NestJS, and Python.
@@ -67,7 +67,7 @@ function App() {
 
       {/* Skills Section (ปรับเป็น 4 หมวดหมู่) */}
       <section id="skills" className="section-box">
-        <h2 className="title-pink">02. <span className="text-pink-500">TECH_STACK</span></h2>
+        <h2 className="title-pink"><span className="text-pink-500">TECH_STACK</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
           <div className="card-skill hover-neon-cyan">
@@ -95,7 +95,7 @@ function App() {
 
     {/* Projects Section */}
       <section id="projects" className="section-box-lg">
-        <h2 className="title-cyan">03. <span className="text-cyan-400">Featured Projects</span></h2>
+        <h2 className="title-cyan"><span className="text-cyan-400">Featured Projects</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Project 1: Document Library */}
