@@ -35,7 +35,7 @@ function App() {
       <header className="hero-container">
         <div className="hero-badge">Status: Seeking Internship Opportunity</div>
         <h1 className="hero-title">
-          TATSUNORI <span className="text-pink-500 drop-shadow-[0_0_15px_rgba(236,72,153,0.5)]">KATO</span>
+           <span className="text-pink-500 drop-shadow-[0_0_15px_rgba(236,72,153,0.5)]">TATSUNORI KATO</span>
         </h1>
         <p className="text-cyan-300 text-lg md:text-xl font-semibold tracking-widest mb-4">
           FULLSTACK DEVELOPER
