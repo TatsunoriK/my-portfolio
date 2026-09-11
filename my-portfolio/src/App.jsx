@@ -238,7 +238,7 @@ function App() {
           </a>
 
           {/* LinkedIn */}
-          <a href="https://www.linkedin.com/in/katoz-nori-a16a57432/" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-cyan-400 hover:translate-x-2 transition-all duration-300 group">
+          <a href="https://www.linkedin.com/in/tatsunori-kato-a16a57432/" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-cyan-400 hover:translate-x-2 transition-all duration-300 group">
             <span className="text-cyan-500 group-hover:text-pink-500 transition-colors">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"></circle></svg>
             </span>
@@ -278,7 +278,7 @@ function App() {
 
       {/* Footer */}
       <footer className="text-center py-10 border-t border-slate-900 text-xs text-slate-600 tracking-widest relative z-10">
-        // DESIGNED & ENGINEERED BY TATSUNORI KATO // 2099 EDITION //
+     DESIGNED & ENGINEERED BY TATSUNORI KATO 
       </footer>
 
     </div>
